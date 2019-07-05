@@ -9,8 +9,8 @@ btn.addEventListener('click',()=>{
 
     let tagtxt = tarea.value;
 
-    let re = new RegExp("。",'g');
-    tagtxt = tagtxt.replace(re,'。だが男だ。');
+    let re = new RegExp("(。)",'g');
+    tagtxt = tagtxt.replace(re,'$1だが男だ。');
 
     result.innerText = tagtxt;
 });
